@@ -23,7 +23,8 @@ class Route {
   }
 
   blocksTravelled() {
-    vertical = Math.abs(endingLocation.vertical - beginningLocation.vertical);
-    horizontal = beginningLocation
+    let vertical_distance = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical);
+    let horizontal_distance = Math.abs(avenueToInteger(this.endingLocation.horizontal) - avenueToInteger(this.beginningLocation.horizontal));
+    return vertical_distance + horizontal_distance;
   }
 }
