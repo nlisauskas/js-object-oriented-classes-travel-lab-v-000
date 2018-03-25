@@ -5,11 +5,10 @@ class Driver {
   }
 
   startDate() {
-    
+    Date.parse(this.day_joined);
   }
 
   yearsExperienceFromBeginningOf() {
-    
+
   }
 }
-
