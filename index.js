@@ -1,11 +1,8 @@
 class Driver {
-  constructor(name, day_joined) {
+  constructor(name, date) {
     this.name = name;
-    this.day_joined = day_joined;
-  }
-
-  startDate() {
-    return Date.parse(this.day_joined);
+    this.date = date;
+    this.startDate = new Date(date);
   }
 
   yearsExperienceFromBeginningOf() {
